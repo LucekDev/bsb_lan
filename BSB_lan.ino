@@ -4539,9 +4539,7 @@ void transmitFile(File dataFile) {
  * *************************************************************** */
 void resetBoard(){
 #if defined(__SAM3X8E__)
-// Reset function from https://forum.arduino.cc/index.php?topic=345209.0
-// reset with Ethernet shield resetting
-  rstc_set_external_reset(RSTC, 256);
+            // TODO
 #else
   asm volatile ("  jmp 0");
 #endif
